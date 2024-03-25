@@ -13,10 +13,10 @@ type Shape struct {
 func is2d(shape Shape) bool {
 	switch shape.Name {
 	case "square":
-		return true
+		return false
 
 	case "cube":
-		return true
+		return false
 
 	default:
 		return true
