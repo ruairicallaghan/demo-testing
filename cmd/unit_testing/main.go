@@ -30,12 +30,5 @@ func main() {
 	}
 	square2d := is2d(square)
 
-	cube := Shape{
-		Name:       "cube",
-		Dimensions: 3,
-	}
-	cube2d := is2d(cube)
-
 	fmt.Println("square is 2d: ", square2d)
-	fmt.Println("cube is 2d: ", cube2d)
 }
