@@ -16,7 +16,7 @@ func is2d(shape Shape) bool {
 		return true
 
 	case "cube":
-		return false
+		return true
 
 	default:
 		return true
