@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Shape struct {
 	Name       string
@@ -9,10 +11,15 @@ type Shape struct {
 
 // is2d checks if a given shape has 2 Dimensions.
 func is2d(shape Shape) bool {
-	if shape.Dimensions == 2 {
+	switch shape.Name {
+	case "square":
 		return true
-	} else {
+
+	case "cube":
 		return false
+
+	default:
+		return true
 	}
 }
 
@@ -23,12 +30,5 @@ func main() {
 	}
 	square2d := is2d(square)
 
-	cube := Shape{
-		Name:       "cube",
-		Dimensions: 3,
-	}
-	cube2d := is2d(cube)
-
 	fmt.Println("square is 2d: ", square2d)
-	fmt.Println("cube is 2d: ", cube2d)
 }
