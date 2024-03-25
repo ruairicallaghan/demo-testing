@@ -29,6 +29,6 @@ func main() {
 	}
 	cube2d := is2d(cube)
 
-	fmt.Println("square: ", square2d)
-	fmt.Println("cube: ", cube2d)
+	fmt.Println("square is 2d: ", square2d)
+	fmt.Println("cube is 2d: ", cube2d)
 }
