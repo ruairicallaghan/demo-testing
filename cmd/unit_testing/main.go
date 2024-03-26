@@ -9,11 +9,15 @@ type Shape struct {
 
 // is2d checks if a given shape has 2 Dimensions.
 func is2d(shape Shape) bool {
-	if shape.Dimensions == 2 {
+	switch shape.Name {
+	case "square":
 		return true
-	} else {
+	case "cube":
 		return false
+	default:
+		return true
 	}
+
 }
 
 func main() {
